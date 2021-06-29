@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="description" name="description">
+    <meta name="google" content="notranslate" />
+    <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+    <link href="./assets/favicon.ico" rel="icon">
+
+    <title>Works</title>
+
+    <link href="./main.3f6952e4.css" rel="stylesheet">
+
+
+</head>
+
+<body class="repeat-bg">
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse " aria-expanded="false ">
+          <span class="sr-only ">Toggle navigation</span>
+          <span class="icon-bar "></span>
+          <span class="icon-bar "></span>
+          <span class="icon-bar "></span>
+        </button>
+
+                <div class="collapse navbar-collapse " id="navbar-collapse ">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="./index.html" title="">Home</a></li>
+                        <li><a href="./works.html" title="">Works</a></li>
+                        <li><a href="./mlmodels.html" title="">ML Models</a></li>
+                        <li><a href="./resume.html" title="">Resume</a></li>
+                        <li><a href="./courses.html" title="">Courses</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="section-container">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-8 col-sm-offset-2 section-container-spacer ">
+                    <div class="text-center ">
+                        <h1 class="h2 ">Machine Learning Models</h1>
+                        <p>List of all the Machine Learning models that I have learned and worked upon.
+                        </p>
+                    </div>
+                </div>
+
+                <script type="text/javascript" src="./assets/mlmodels/plotlyjs-bundle.js"></script>
+
+
+                <script type="text/javascript" src="./assets/mlmodels/figure.js"></script>
+
+                <div class="col-sm-8" id="de8192c0-eb26-4c5a-aadf-24f834745c05" style="width: 100%; height: 100%;" class="plotly-graph-div"></div>
+                <script type="text/javascript">
+                    (function() {
+                        window.PLOTLYENV = {
+                            'BASE_URL': 'https://plotly.com'
+                        };
+
+                        var gd = document.getElementById('de8192c0-eb26-4c5a-aadf-24f834745c05')
+                        var resizeDebounce = null;
+
+                        function resizePlot() {
+                            var bb = gd.getBoundingClientRect();
+                            Plotly.relayout(gd, {
+                                width: bb.width,
+                                height: bb.height
+                            });
+                        }
+
+
+                        window.addEventListener('resize', function() {
+                            if (resizeDebounce) {
+                                window.clearTimeout(resizeDebounce);
+                            }
+                            resizeDebounce = window.setTimeout(resizePlot, 100);
+                        });
+
+
+
+                        Plotly.plot(gd, {
+                            data: figure.data,
+                            layout: figure.layout,
+                            frames: figure.frames,
+                            // config: {
+                            //     "showLink": true,
+                            //     "linkText": "Export to plotly.com",
+                            //     "mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A"
+                            // }
+                        });
+
+                    }());
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
